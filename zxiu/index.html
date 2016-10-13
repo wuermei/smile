@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>走秀网-首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<body>
+
+	<header>
+		<h1 class="logo"></h1>
+	</header>
+	<section class="m_search">
+		<input type="text" class="search" placeholder="请输入搜索内容">
+	</section>
+	<section class="banner">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="img/1.png"></div>
+		        <div class="swiper-slide"><img src="img/2.png"></div>
+		        <div class="swiper-slide"><img src="img/3.png"></div>
+		        <div class="swiper-slide"><img src="img/4.png"></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		    
+		    <!-- 如果需要导航按钮 -->
+		   <!--  <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div> -->
+		    
+		    <!-- 如果需要滚动条 -->
+<!-- 		    <div class="swiper-scrollbar"></div> -->
+		</div>
+	</section>
+
+	
+
+	<dl class="item">
+		<dt>
+			<img src="img/pic_1.jpg" alt="抽奖" title="抽奖">
+		</dt>
+		<dd>
+			<p class="title">0元大抽奖！走秀携古尔莎为你开启价值28880元的土耳其 、、、</p>
+			<p class="price">
+				<span class="new_price">￥0</span>
+				<del class="old_price">￥28880</del>
+			</p>
+			<p class="discount">0折</p>
+			<a class="cart" href="#">
+				<img src="img/cart.jpg" alt="添加至购物车" title="添加至购物车">
+			</a>
+		</dd>
+	</dl>
+
+	<dl class="item">
+		<dt>
+			<img src="img/pic_1.jpg" alt="抽奖" title="抽奖">
+		</dt>
+		<dd>
+			<p class="title">0元大抽奖！走秀携古尔莎为你开启价值28880元的土耳其 、、、</p>
+			<p class="price">
+				<span class="new_price">￥0</span>
+				<del class="old_price">￥28880</del>
+			</p>
+			<p class="discount">0折</p>
+			<a class="cart" href="#">
+				<img src="img/cart.jpg" alt="添加至购物车" title="添加至购物车">
+			</a>
+		</dd>
+	</dl>
+
+	<dl class="item">
+		<dt>
+			<img src="img/pic_1.jpg" alt="抽奖" title="抽奖">
+		</dt>
+		<dd>
+			<p class="title">0元大抽奖！走秀携古尔莎为你开启价值28880元的土耳其 、、、</p>
+			<p class="price">
+				<span class="new_price">￥0</span>
+				<del class="old_price">￥28880</del>
+			</p>
+			<p class="discount">0折</p>
+			<a class="cart" href="#">
+				<img src="img/cart.jpg" alt="添加至购物车" title="添加至购物车">
+			</a>
+		</dd>
+	</dl>
+
+	<dl class="item">
+		<dt>
+			<img src="img/pic_1.jpg" alt="抽奖" title="抽奖">
+		</dt>
+		<dd>
+			<p class="title">0元大抽奖！走秀携古尔莎为你开启价值28880元的土耳其 、、、</p>
+			<p class="price">
+				<span class="new_price">￥0</span>
+				<del class="old_price">￥28880</del>
+			</p>
+			<p class="discount">0折</p>
+			<a class="cart" href="#">
+				<img src="img/cart.jpg" alt="添加至购物车" title="添加至购物车">
+			</a>
+		</dd>
+	</dl>
+
+	<footer>
+		<ul>
+			<li class="active"><a href="#" class="iconfont icon-shouye"><span>首页</span></a></li>
+			<li><a href="#" class="iconfont icon-fenlei"><span>分类</span></a></li>
+			<li><a href="#" class="iconfont icon-gouwuche"><span>购物车</span></a></li>
+			<li><a href="#" class="iconfont icon-wode"><span>我的秀</span></a></li>
+			<li><a href="#" class="iconfont icon-gengduo"><span>更多</span></a></li>
+		</ul>
+	</footer>
+	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+		(function(doc, win) {
+            var docEl = doc.documentElement,
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 740) {
+                        clientWidth = 740;
+                    }
+                    if (clientWidth <= 320) {
+                        clientWidth = 320;
+                    }
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener('resize', recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+        window.onload = function() {
+        	var mySwiper = new Swiper ('.swiper-container', {
+		    // direction: 'vertical',
+		    fade: true,
+		    loop: true,
+		    autoplay: 5000,//设定自动轮播
+		    
+		    // 如果需要分页器
+		    pagination: '.swiper-pagination',
+		    
+		    // 如果需要前进后退按钮
+		    // nextButton: '.swiper-button-next',
+		    // prevButton: '.swiper-button-prev',
+		    
+		    // 如果需要滚动条
+		    // scrollbar: '.swiper-scrollbar',
+		  	})        
+        }
+	</script>
+	
+</body>
+</html>
